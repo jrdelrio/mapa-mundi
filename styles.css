@@ -1,0 +1,56 @@
+body {
+    background: #54a4ff !important;
+    margin: 0;
+}
+
+.mapadiv {
+    width: 100vw;
+    margin: auto;
+    justify-content: center;
+    padding-top: 40px;
+    display: flex;
+}
+
+.mapadiv path {
+    fill: #F0e68C;
+    stroke: #8b4513;
+    stroke-width: 1px;
+    transition: fill 0.2s, stroke-width 0.3s;
+}
+
+.mapadiv path:hover {
+    stroke-width: 3px;
+    cursor: pointer;
+}
+
+.mapadiv path.active {
+    fill: #800000;
+    stroke-width: 3px;
+}
+
+#country-card {
+    position: fixed; /* Fija la tarjeta en una posición relativa a la ventana del navegador */
+    bottom: 10px; /* Espacio desde la parte inferior */
+    left: 10px; /* Espacio desde la parte izquierda */
+    z-index: 1000; /* Asegura que la tarjeta esté sobre otros elementos */
+}
+
+.flag {
+    font-size: 4rem;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    margin: 0
+}
+
+.country-data {
+    margin-top: 20px;
+}
+
+.footer-link {
+    color: #F0e68C;
+}
+
+.footer-link :hover {
+    color: red;
+}
