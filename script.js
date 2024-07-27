@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  // Mostrar el modal al cargar la página
+  var myModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+  myModal.show();
+
   const paths = document.querySelectorAll(".mapadiv path");
   const card = document.getElementById("country-card");
   const cardTitle = card.querySelector(".card-title");

@@ -57,3 +57,23 @@ body {
 .country-data p {
     margin-bottom: 0.5rem !important;
 }
+
+
+/*modal*/
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* footer */
+
