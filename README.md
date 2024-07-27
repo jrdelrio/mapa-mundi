@@ -39,6 +39,7 @@ Imports `countryCodes.js` and handles:
 
 - Data API: [restcountries.com](https://restcountries.com/)
 - Icons: [Unicode Emojis](https://unicode.org/emoji/)
+- Vector Maps: [SimpleMaps](https://simplemaps.com/)
 
 Thank you for using this project! If you have any questions or suggestions, feel free to open an issue or contact us.
 
@@ -85,5 +86,6 @@ Importa `countryCodes.js` y gestiona:
 
 - API de datos: [restcountries.com](https://restcountries.com/)
 - Iconos: [Emojis Unicode](https://unicode.org/emoji/)
+- Mapas Vectorizados: [SimpleMaps](https://simplemaps.com/)
 
 ¡Gracias por utilizar este proyecto! Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue o contactarnos.
