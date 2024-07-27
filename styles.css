@@ -1,5 +1,12 @@
+:root {
+    --water-color: #e0e0e0; /* Gris claro para el agua */
+    --border-color: #000000;
+    --country-fill: #b0b0b0; /* Gris intermedio para rellenar los países */
+    --country-active: #404040; /* Gris oscuro para cuando un país está clicado */
+  }
+
 body {
-    background: #54a4ff !important;
+    background: var(--water-color) !important;
     margin: 0;
 }
 
@@ -12,11 +19,11 @@ body {
 }
 
 .mapadiv path {
-    fill: #F0e68C;
-    stroke: #8b4513;
+    fill: var(--country-fill);
+    stroke: var(--border-color);
     stroke-width: 1px;
-    transition: fill 0.2s, stroke-width 0.3s;
-}
+    transition: fill 0.3s, stroke-width 0.3s;
+  }
 
 .mapadiv path:hover {
     stroke-width: 3px;
@@ -24,7 +31,7 @@ body {
 }
 
 .mapadiv path.active {
-    fill: #800000;
+    fill: var(--country-active);
     stroke-width: 3px;
 }
 
@@ -47,10 +54,6 @@ body {
     margin-top: 20px;
 }
 
-.footer-link {
-    color: #F0e68C;
-}
-
-.footer-link :hover {
-    color: red;
+.country-data p {
+    margin-bottom: 0.5rem !important;
 }

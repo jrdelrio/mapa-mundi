@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const cardCurrency = card.querySelector(".currency");
   const cardLanguage = card.querySelector(".language");
   const cardArea = card.querySelector(".area");
+  const cardDensity = card.querySelector(".density");
+  const cardIndependent = card.querySelector(".independent")
+  const googleMapsLink = card.querySelector(".google-maps");
+  const googleSearch = card.querySelector('.google-search');
   const countryCodes = {
     'Afghanistan': 'AF',
     'Aland Islands': 'AX',
@@ -318,6 +322,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Procesar área
             cardArea.textContent = `📏: ${country.area.toLocaleString()} km²`;
+
+            // procesar independencia
+            cardIndependent.textContent = `✊🏼: ${country.independent ? "Independent ✅" : "Not Independent ❌"}`;
+
+            // procesar densidad poblacional
+            const countryDensity = country.population / country.area;
+            cardDensity.textContent = `🏙️: ${countryDensity.toFixed(2)} hab/km²`
+
+            // procesar google maps
+            if (country.maps && country.maps.googleMaps) {
+                googleMapsLink.href = country.maps.googleMaps;
+              } else {
+                googleMapsLink.href = "#";
+              }
+            
+              // procesar busqueda de google
+              googleSearch.href = `https://www.google.com/search?q=${cardTitle.textContent}`;
 
             // Mostrar la tarjeta
             card.classList.remove("d-none");
