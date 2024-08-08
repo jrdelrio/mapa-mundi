@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cardIndependent = card.querySelector(".independent")
   const googleMapsLink = card.querySelector(".google-maps");
   const googleSearch = card.querySelector('.google-search');
+  const rotateButton = document.querySelector('.rotate-button')
   const countryCodes = {
     Afghanistan: "AF",
     "Aland Islands": "AX",
@@ -264,6 +265,16 @@ document.addEventListener("DOMContentLoaded", function () {
     Zambia: "ZM",
     Zimbabwe: "ZW",
   };
+
+  rotateButton.addEventListener('click', function (){
+    console.log('click!')
+    const body = document.body;
+    if (screen.width <= 1000){
+      body.classList.add('rotate');
+      console.log('agregada clase rotate al body')
+    }
+    console.log('ancho de pantalla: ' + screen.width)
+  })
 
   paths.forEach((path) => {
     const className = path.getAttribute("class");
